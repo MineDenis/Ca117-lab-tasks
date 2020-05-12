@@ -1,0 +1,13 @@
+def reverse_list(lis):
+    if len(lis) == 0:
+        return []
+    else:
+        return [lis.pop()] + reverse_list(lis)
+
+def main():
+    print(reverse_list([1, 2, 3]))
+    print(reverse_list([3, 4, 5, 6]))
+    print(reverse_list([1, 2]))
+
+if __name__ == '__main__':
+    main()
